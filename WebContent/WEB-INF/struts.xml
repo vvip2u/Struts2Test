@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN"
+        "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true" />
+	<constant name="struts.convention.default.parent.package" value="default-package" />
+	<constant name="struts.convention.package.locators" value="action" />
+	<package name="default-package" extends="convention-default">
+
+		<default-action-ref name="index" />
+
+		<action name="index"  >
+			<result>/WEB-INF/content/index.jsp</result>
+		</action>	
+
+	</package>
+</struts>
